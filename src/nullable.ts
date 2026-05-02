@@ -32,3 +32,4 @@ const throwError = (massage: string) => {
     throw new Error(massage)
 }
 throwError("Error ...")
+
