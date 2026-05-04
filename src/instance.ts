@@ -26,8 +26,12 @@ class Teacher extends Person {
         console.log(`${this.name} doinik ${numOfHours} class nai`);
     }
 }
+
+const isStudent = (user: Person) => {
+    return user instanceof Student;
+}
 const getUserInfo = (user: Person) => {
-    if(user instanceof Student){
+    if(isStudent(user)){
         user.doStudy(8)
     }else if(user instanceof Teacher){
         user.takeClass(6)
